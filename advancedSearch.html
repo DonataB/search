@@ -4,32 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link type="text/css" rel="stylesheet" href="src/main.css">
-        <title>Search</title>
+        <title>Advanced Search</title>
     </head>
     <body>
         <div class="container">
-            <div class="header">
+            <div class="header advancedSearchHeader">
+                <span><a href="index.html" title="Go to Google Home"><img src="./images/google.png" height="40px"></a></span>
                 <a href="./imageSearch.html">Images</a>
-                <a href="./advancedSearch.html">Advanced</a>
                 <img src="./images/bars.png">
                 <button>Sign in</button>
             </div>
-            <div class="content">
-                <img src="./images/google.png">
-                <form action="https://google.com/search">
-                    <input type="text" name="q">
-                    <div class="icons">
-                        <div><img src="./images/search.png"></div>
-                        <div><img src="./images/mic.png">
-                        </div>
+            <div class="title">Advanced Search</div>
+            <div class="form">
+                <div class="form-title">Find pages with… </div>
+                <div class="inputs">
+                    <div>
+                        <label for="all">all these words:</label>
+                        <input type="text1" name="as_q">
                     </div>
-                    <input type="submit" value="Google Search">
-                    <input type="submit" value="I'm Feeling Lucky" name="btnI">
-                 </form>
-                 <div class="language">
-                     Google offered in: <a href="https://www.google.com/setprefs?sig=0_hmdag6cYguGVZncGl0pLyt-2PEI%3D&hl=pl&source=homepage&sa=X&ved=0ahUKEwiexezL36jvAhUByxoKHU4hAecQ2ZgBCA0">polski</a>
-                 </div>
+                    <div>
+                        <label for="all" class="x">this exact word or phrase:</label>
+                        <input type="text1" name="as-epq">
+                    </div>
+                    <div> 
+                        <label for="all" class="x">any of these words:</label>
+                        <input type="text1" name="as_oq">
+                    </div>
+                    <div>
+                        <label for="all" class="x">none of these words:</label>
+                        <input type="text1" name="as_eq">
+                    </div>
+                    <div class="btn-advSearch">
+                        <input type="submit" class="submit" value="Advanced Search" name="tbs">
+                    </div>
+                    
+                </div>
+                
             </div>
+      
+        </div>
             <div class="footer">
                 <div class="country">
                     <p>Poland</p>
